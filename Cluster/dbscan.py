@@ -72,7 +72,7 @@ def plot(X, divide_index):
     plt.show()    
     
 if __name__ == "__main__":
-    X = read_data('data/16qam_snr18.csv')
+    X = read_data('data/testSet.csv')
     for i in range(20, 30):
         print(i)
         core_list, core_neibour = init_core(X, i * 0.1, 5)
