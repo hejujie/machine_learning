@@ -65,7 +65,6 @@ def plot(X, divide_index):
     color_num = 0
     for i in unique:
         class_index = np.where(divide_index == i)
-#        print(i, class_index)
         class_data = X[class_index]
         plt.plot(class_data[:, 0], class_data[:, 1], color[color_num % len(color)])
         color_num += 1
@@ -73,11 +72,14 @@ def plot(X, divide_index):
     
 if __name__ == "__main__":
     X = read_data('data/testSet.csv')
-    for i in range(20, 30):
+    # divide_index with value is outlier, it will be plot as bule color
+    for i in range(23, 27):
         print(i)
-        core_list, core_neibour = init_core(X, i * 0.1, 5)
+        core_list, core_neibour = init_core(X, i * 0.1, 4)
         divide_index = expand_cluster(X, core_list, core_neibour)
         plot(X, divide_index)
+        
+    
     
     
     
