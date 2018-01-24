@@ -5,7 +5,6 @@ Created on Sun Dec 17 22:03:48 2017
 @author: jie
 """
 
-import random
 import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
