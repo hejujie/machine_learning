@@ -1,0 +1,1 @@
+- Implement base on the blog (Simple LSTM)[http://nicodjimenez.github.io/2014/08/08/lstm.html]
