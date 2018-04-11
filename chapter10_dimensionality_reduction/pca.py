@@ -25,7 +25,7 @@ def pca(X, d):
     choose_index = sort_index[0:d]
 
     eig_value = eig_value[choose_index]
-    eig_vector = eig_vector[choose_index]
+    eig_vector = eig_vector[:, choose_index]
     print(eig_vector.shape)
 
     X_project = np.dot(X_fix, eig_vector.T)
