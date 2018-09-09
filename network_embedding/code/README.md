@@ -1,0 +1,11 @@
+- The zip include four file 
+	- First is the lab report, a pdf file.
+	- Second is MNMF.py.
+	- Third is LANE.py
+	- Four is a readme file, just this file.
+- Two py file can be ran in python environment, requirement:
+	- sklearn
+	- numpy
+	- pandas 
+	- matplotlib
+	
